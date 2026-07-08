@@ -366,7 +366,8 @@ p.bs-desc {
   background-color: #fbf9eb;
 }
 
-.discover .small-title {
+.discover .small-title,
+.review .small-title {
   display: block;
   margin-bottom: 20px;
 }
@@ -375,7 +376,8 @@ p.bs-desc {
   background: #ff7f31;
 }
 
-.discover h2 {
+.discover h2,
+.review h2 {
   font-size: 55px;
   line-height: 62px;
   font-weight: 300;
@@ -432,6 +434,7 @@ p.bs-desc {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .cta-box h2 {
@@ -470,11 +473,249 @@ p.bs-desc {
   border: 1px solid var(--text);
 }
 
+/* Origin Section Started Here */
+.origin .small-title span {
+  background: #a2c9fc;
+}
+
+.origin {
+  padding: 120px 50px;
+  background: url(https://www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=2000);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.origin h2 {
+  font-size: 150px;
+  line-height: 0.95;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 50px;
+}
+
+.origin p {
+  font-size: 55px;
+  line-height: 62px;
+  font-weight: 300;
+  color: var(--white);
+  font-family: "Reckless";
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.origin-box {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.box-img {
+  width: 100px;
+  height: 100px;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--white);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.origin button {
+  font-size: 17px;
+  padding: 15px 60px;
+  border-radius: 30px;
+  color: var(--text);
+  background-color: var(--white);
+  border: 1px solid var(--text);
+}
+
+.review-cards {
+  display: flex;
+  gap: 20px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+.review-top {
+  padding: 0 16%;
+}
+
+.review {
+  padding: 100px 0;
+  background-color: #fbf9eb;
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 420px;
+  border: 1px solid var(--text);
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 28px;
+}
+
+.quote {
+  font-family: "Reckless";
+  font-style: italic;
+  font-size: 20px;
+  line-height: 1.35;
+  color: #2b2b2b;
+  margin: 0 0 22px 0;
+}
+
+.author {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.45);
+  letter-spacing: 0.2px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border-top: 1px solid var(--text);
+}
+
+.thumb {
+  width: 62px;
+  height: 62px;
+  flex-shrink: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+}
+
+.product-name {
+  flex: 1;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.35;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.shop-btn {
+  background: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 22px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #1a1a1a;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Card 1 - coral/orange */
+.card-1 {
+  background: #f5af8a;
+}
+.card-1 .author {
+  color: rgba(0, 0, 0, 0.35);
+}
+.card-1 .footer {
+  background: #ea6d44;
+}
+
+/* Card 2 - green */
+.card-2 {
+  background: #abdf74;
+}
+.card-2 .footer {
+  background: #73bc25;
+}
+
+/* Card 3 - gold */
+.card-3 {
+  background: #ffd265;
+}
+.card-3 .footer {
+  background: #ffb500;
+}
+
+/* Card 4 - lighter green */
+.card-4 {
+  background: #ade674;
+}
+.card-4 .footer {
+  background: #8bc045;
+}
+
+/* Card 5 - lavender */
+.card-5 {
+  background: #d9c2e1;
+}
+.card-5 .footer {
+  background: #c790db;
+}
+
+@media (max-width: 1100px) {
+  .row {
+    flex-wrap: wrap;
+  }
+  .card {
+    flex: 1 1 45%;
+    min-height: 480px;
+  }
+}
+@media (max-width: 600px) {
+  .card {
+    flex: 1 1 100%;
+  }
+}
+
 /* Responsive Starts(For Desktop First approach) */
 @media (max-width: 1500px) {
   .hero h1 {
     font-size: 50px;
     line-height: 53px;
+  }
+
+  .review-cards {
+    flex-wrap: wrap;
   }
 }
 
@@ -536,7 +777,8 @@ p.bs-desc {
   }
 
   .spacer h2,
-  .discover h2 {
+  .discover h2,
+  .review h2 {
     font-size: 30px;
     line-height: 36px;
   }
@@ -568,4 +810,42 @@ p.bs-desc {
   .cta-box p {
     font-size: 18px;
   }
+
+  .call-to-action {
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: end;
+  }
+
+  .review-top {
+    padding: 0 20px;
+  }
+
+  .review-cards {
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+
+  .origin {
+    padding: 120px 20px;
+  }
+
+  .origin h2 {
+    font-size: 60px;
+  }
+
+  .origin p {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.origin-box {
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.bs-row {
+    flex-wrap: wrap;
+}
 }
