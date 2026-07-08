@@ -1,0 +1,242 @@
+@font-face {
+  font-family: "Reckless";
+  src: url(./font/RecklessCondensedS-TRIAL-Book.woff);
+}
+
+:root {
+  --dark-blue: #2a2857;
+  --white: #fff;
+  --text: #201c1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: var(--dark-blue);
+}
+
+.top-header span {
+  color: var(--white);
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+}
+
+.bottom-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fffefb;
+  color: var(--text);
+  padding: 10px 20px;
+  border: 0.0625rem solid currentColor;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+ul.left-navlinks {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+ul.left-navlinks li a {
+  font-size: 21px;
+  line-height: 27px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s all ease;
+}
+
+ul.left-navlinks li a span {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #c0dbff;
+  border: 1px solid var(--text);
+  transition: 0.3s all ease;
+}
+
+ul.left-navlinks li a:hover span {
+  transform: rotate(180deg);
+  background: #ffb500;
+}
+
+ul.left-navlinks li a span i {
+  font-size: 14px;
+  line-height: 13px;
+  transition: 0.3s all ease;
+}
+
+ul.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  text-transform: uppercase;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  font-size: 12.5px;
+}
+
+li.nav-icon i {
+  font-weight: 300;
+  font-size: 26px;
+}
+
+i.ri-star-fill {
+  color: #ffb500;
+}
+
+li.nav-icon {
+  position: relative;
+}
+
+li.nav-icon span {
+  position: absolute;
+  right: -8px;
+  top: 4px;
+  width: 17px;
+  height: 17px;
+  background: #ffb500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  border-radius: 50%;
+  border: 1px solid var(--text);
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* Banner Css Starts here */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 97vh;
+  background: url(https://www.twoleavestea.com/cdn/shop/files/cere-memorial_matcha_wide.png?v=1779304660&width=1280);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 50px;
+  border-bottom: 1px solid var(--text);
+}
+.hero-content {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 84px;
+  line-height: 84px;
+  font-weight: 300;
+  color: var(--text);
+  font-family: "Reckless";
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 17px;
+  line-height: 26px;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.hero-content button {
+  font-size: 17px;
+  padding: 15px 50px;
+  border-radius: 30px;
+  color: var(--white);
+  background-color: var(--dark-blue);
+  border: 1px solid var(--text);
+}
+
+@media (max-width: 1500px) {
+  .hero h1 {
+    font-size: 50px;
+    line-height: 53px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mobile-menu {
+    display: block;
+  }
+
+  .mobile-menu i {
+    font-size: 24px;
+  }
+
+  ul.left-navlinks {
+    display: none;
+  }
+
+  ul.navlinks li:nth-child(1),
+  ul.navlinks li:nth-child(2),
+  ul.navlinks li:nth-child(3) {
+    display: none;
+  }
+
+  .hero {
+    padding: 50px 20px;
+    background: url(https://www.twoleavestea.com/cdn/shop/files/matcha_mobile.png?v=1779455800&width=720);
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .hero-content button {
+    width: 100%;
+  }
+}
