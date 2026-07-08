@@ -214,9 +214,9 @@ li.nav-icon span {
 }
 
 /* Best Sellers Section Css Starts Here */
-.best-seller {
+.best-sellers {
   background-color: #fbf9eb;
-  margin: 0 50px;
+  padding: 0 50px;
   padding-bottom: 100px;
   border-bottom: 1px solid var(--text);
 }
@@ -348,7 +348,7 @@ p.bs-desc {
 
 .center-btn {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 40px;
 }
 
 .center-btn button {
@@ -357,6 +357,116 @@ p.bs-desc {
   border-radius: 30px;
   color: var(--white);
   background-color: var(--dark-blue);
+  border: 1px solid var(--text);
+}
+
+/* Discover Section Starts */
+.discover {
+  padding: 100px 16%;
+  background-color: #fbf9eb;
+}
+
+.discover .small-title {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.discover .small-title span {
+  background: #ff7f31;
+}
+
+.discover h2 {
+  font-size: 55px;
+  line-height: 62px;
+  font-weight: 300;
+  color: var(--text);
+  font-family: "Reckless";
+  max-width: 810px;
+  margin-bottom: 30px;
+}
+
+.discover input {
+  padding: 22px 64px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: 1px solid var(--text);
+  outline: none;
+}
+
+/* Vibe section starts */
+.vibe {
+  padding: 0 16% 100px 16%;
+  color: var(--text);
+  background-color: #fbf9eb;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.vibe-btns button {
+  font-size: 26px;
+  font-family: "Reckless";
+  font-weight: 300;
+  padding: 11px 20px;
+  border-radius: 12px;
+  border: 1px solid var(--text);
+  background: #daeaff;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.vibe-btns button:hover {
+  background: #a2c9fc;
+}
+
+.vibe-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Call-to-action Starts here */
+.call-to-action {
+  padding: 50px;
+  background: url(https://www.twoleavestea.com/cdn/shop/files/Two_Leaves_Tea_Aug_25_Shoot-14x_SQ_1_d549e6bb-f1ad-4b36-a851-05e1af195a31.webp?v=1771593222&width=2700.0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cta-box h2 {
+  font-size: 55px;
+  line-height: 62px;
+  font-weight: 300;
+  color: var(--white);
+  font-family: "Reckless";
+  max-width: 230px;
+}
+
+.cta-box {
+  width: 35%;
+  background: #f26412;
+  padding: 70px 50px;
+  border-radius: 12px;
+  border: 1px solid var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.cta-box p {
+  color: var(--white);
+  font-size: 19px;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+
+.cta-box button {
+  font-size: 17px;
+  padding: 15px 60px;
+  border-radius: 30px;
+  color: var(--text);
+  background-color: var(--white);
   border: 1px solid var(--text);
 }
 
@@ -407,12 +517,55 @@ p.bs-desc {
     width: 100%;
   }
 
-  .spacer {
+  .spacer,
+  .discover {
     padding: 70px 20px;
   }
 
-  .spacer h2 {
+  .vibe {
+    padding: 0px 20px 70px 20px;
+  }
+
+  .best-sellers {
+    padding: 0 20px;
+    padding-bottom: 70px;
+  }
+
+  .small-title span {
+    font-size: 32px;
+  }
+
+  .spacer h2,
+  .discover h2 {
     font-size: 30px;
     line-height: 36px;
+  }
+
+  .discover input {
+    max-width: 750px;
+    width: 100%;
+  }
+
+  .call-to-action {
+    padding: 0;
+  }
+
+  .cta-box {
+    width: 100%;
+    border-radius: 0;
+    padding: 60px 20px;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .cta-box h2 {
+    font-size: 40px;
+    line-height: 52px;
+    max-width: 270px;
+  }
+
+  .cta-box p {
+    font-size: 18px;
   }
 }
