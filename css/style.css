@@ -435,6 +435,7 @@ p.bs-desc {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  border-bottom: 1px solid var(--text);
 }
 
 .cta-box h2 {
@@ -604,7 +605,7 @@ p.bs-desc {
   letter-spacing: 0.2px;
 }
 
-.footer {
+.card-footer {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -656,7 +657,7 @@ p.bs-desc {
 .card-1 .author {
   color: rgba(0, 0, 0, 0.35);
 }
-.card-1 .footer {
+.card-1 .card-footer {
   background: #ea6d44;
 }
 
@@ -664,7 +665,7 @@ p.bs-desc {
 .card-2 {
   background: #abdf74;
 }
-.card-2 .footer {
+.card-2 .card-footer {
   background: #73bc25;
 }
 
@@ -672,7 +673,7 @@ p.bs-desc {
 .card-3 {
   background: #ffd265;
 }
-.card-3 .footer {
+.card-3 .card-footer {
   background: #ffb500;
 }
 
@@ -680,7 +681,7 @@ p.bs-desc {
 .card-4 {
   background: #ade674;
 }
-.card-4 .footer {
+.card-4 .card-footer {
   background: #8bc045;
 }
 
@@ -688,7 +689,7 @@ p.bs-desc {
 .card-5 {
   background: #d9c2e1;
 }
-.card-5 .footer {
+.card-5 .card-footer {
   background: #c790db;
 }
 
@@ -705,6 +706,142 @@ p.bs-desc {
   .card {
     flex: 1 1 100%;
   }
+}
+
+/* Footer Css Starts here */
+footer {
+  background-color: #c0dbff;
+  padding: 0 50px;
+}
+
+.footer-top {
+  padding: 100px 14%;
+  color: var(--text);
+}
+
+.footer-top h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer-top h2 {
+  font-size: 28px;
+  line-height: 1.4;
+  font-family: "Reckless";
+  font-weight: 200;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.footer-top input {
+  padding: 17px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: 1px solid var(--text);
+  outline: none;
+  width: 400px;
+}
+
+.footer-top button {
+  font-size: 17px;
+  padding: 17px 50px;
+  border-radius: 30px;
+  color: var(--white);
+  background-color: var(--dark-blue);
+  border: 1px solid var(--text);
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.group-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.group-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.group-right i {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--text);
+  color: var(--text);
+}
+
+.footer__menus {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  gap: 50px;
+  padding: 40px 40px 80px;
+  background-color: #2a2857;
+}
+
+.footer__menu-label {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #fbf9eb;
+}
+
+.footer__menu-list li a {
+  line-height: 1.4em;
+  font-weight: 400;
+  color: #fbf9eb;
+  opacity: 0.5;
+}
+
+.footer__menu {
+  min-width: 250px;
+}
+
+.footer-btm {
+  height: 593px;
+  width: 100%;
+  position: relative;
+  background-color: #c0dbff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 0 40px 0;
+}
+
+.footer-btm::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(https://www.twoleavestea.com/cdn/shop/files/footer-extended_1.png?v=1771834074);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.ftr-copy p {
+  max-width: 230px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--text);
 }
 
 /* Responsive Starts(For Desktop First approach) */
@@ -838,14 +975,70 @@ p.bs-desc {
   .origin p {
     font-size: 36px;
     line-height: 44px;
-}
+  }
 
-.origin-box {
-    gap: 50px;
-    flex-wrap: wrap;
-}
+  .box {
+    width: 100px;
+    height: 100px;
+  }
 
-.bs-row {
+  .origin-box {
     flex-wrap: wrap;
-}
+    justify-content: center;
+  }
+
+  .bs-row {
+    flex-wrap: wrap;
+  }
+
+  .footer-top {
+    padding: 70px 0px 40px 0;
+  }
+
+  .input-group {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .group-left {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer-top input {
+    width: 100%;
+  }
+
+  .footer-top button {
+    width: 100%;
+  }
+
+  footer {
+    padding: 0 20px;
+  }
+
+  .footer__menus {
+    padding: 40px 20px 40px;
+  }
+
+  .footer__menu-label {
+    font-size: 22px;
+  }
+
+  .footer-btm {
+    height: 400px;
+    padding: 50px 0 20px 0;
+  }
+
+  .ftr-logo {
+    width: 180px;
+    height: 80px;
+  }
+
+  .ftr-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
